@@ -73,7 +73,7 @@ Freelancer 2
 - Rank : A
 
 ## Database Structure
-You can see database structure from main folder ./assets/database strucuture/Database.PNG
+You can see database structure from main folder ./assets/database strucuture/Database.PNG or you can see this [Database Structure](https://github.com/rifqymuskar/Simple-Portal-Jobs-Website/blob/master/assets/database%20structure/Database.PNG) 
 
 ## For Help
 Feel free to send me an email if you have any problems.
