@@ -67,7 +67,7 @@ Freelancer
 	- password : 12345678
 	- Rank : B
 
-- username : user2
-- password : 12345678
-- Rank : A
+	- username : user2
+	- password : 12345678
+	- Rank : A
 
