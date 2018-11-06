@@ -6,11 +6,11 @@ Simple Portal Jobs Website
 Installation
 *******************
 1. Add Folder to HTDOCS 
-2. use mx100 for name folder
-3. open localhost/phpmyadmin
+2. Use mx100 for name folder
+3. Open localhost/phpmyadmin
 4. Create database mx100
 5. Import database table from main folder ./assets/sql/mx100.sql to database mx100
-6. run webiste from localhost/mx100
+6. Run webiste from localhost/mx100
 
 job portal website which connect company and expert freelancer/part-timer. It always keep
 track of freelancer performance, the more job freelancer completed the more benefit they
@@ -44,11 +44,11 @@ Database : mySQL
 *******************
 User Account
 *******************
-1.Administrator
+1. Administrator
 	-Super Admin, create a user for companies and freelancers
-2.Company
+2. Company
 	- Publish any jobs for freelancer and view proposal upload
-3.Freelancer 
+3. Freelancer 
 	- Search jobs and upload proposal
 
 Administrator :
