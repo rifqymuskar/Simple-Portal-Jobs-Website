@@ -73,3 +73,8 @@ Freelancer 2
 	- password : 12345678
 	- Rank : A
 
+*******************
+Database Structure
+*******************
+You can see database structure from main folder ./assets/database strucuture/Database.PNG
+
