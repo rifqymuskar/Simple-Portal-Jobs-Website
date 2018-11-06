@@ -1,70 +1,73 @@
 ###################
-What is CodeIgniter
+Simple Portal Jobs Website 
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
-
 *******************
-Release Information
-*******************
-
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
 Installation
-************
+*******************
+1. Add Folder to HTDOCS 
+2. use mx100 for name folder
+3. open localhost/phpmyadmin
+4. Create database mx100
+5. Import database table from main folder ./assets/sql/mx100.sql to database mx100
+6. run webiste from localhost/mx100
 
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
+job portal website which connect company and expert freelancer/part-timer. It always keep
+track of freelancer performance, the more job freelancer completed the more benefit they
+gained. There are 2 ranks for freelancer with 2 different proposal space as monthly limit for
+submitting proposal. The ranks are: rank B with 20 pts and rank A with 40 pts, at the
+beginning of each month the proposal space is resetted.
 
-*******
-License
-*******
+*******************
+Objective
+*******************
+As back end developer you must provide API to
+- Enable freelance to submit proposal to jo post
+- Enable company to view proposal for their job post
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+*******************
+user activity
+*******************
+- Freelancer provide budget and completion date estimation on proposal they submit
+- Freelancer can only submit one proposal to any published job
+- Each application submitted by freelancer will reduce the proposal space by 2pts, so the
+rank B freelancer can only submit 10times max and rank A can submit 20times max
+- Employer can view proposal from freelancer for their job post
 
-*********
-Resources
-*********
+*******************
+developed using
+*******************
+Backend : PHP ( Codeigniter ) and Javascript ( AJAX )
+Frontend : Materialize CSS
+Database : mySQL
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+*******************
+User Account
+*******************
+1.Administrator
+	-Super Admin, create a user for companies and freelancers
+2.Company
+	- Publish any jobs for freelancer and view proposal upload
+3.Freelancer 
+	- Search jobs and upload proposal
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+Administrator :
+- username : administrator 
+- password : password
 
-***************
-Acknowledgement
-***************
+Company :
+- username : company1
+- password : 12345678
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+- username : company2
+- password : 12345678
+
+Freelancer :
+- username : user1
+- password : 12345678
+- Rank : B
+
+- username : user2
+- password : 12345678
+- Rank : A
+
