@@ -39,6 +39,7 @@ rank B freelancer can only submit 10times max and rank A can submit 20times max
 ## developed using
 Backend : PHP ( Codeigniter ) and Javascript ( AJAX )
 Frontend : Materialize CSS
+Login system : CodeIgniter Ion Auth by [@benedmunds](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
 Database : mySQL
 
 ## User Account
