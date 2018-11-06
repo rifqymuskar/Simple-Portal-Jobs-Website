@@ -45,27 +45,27 @@ Database : mySQL
 User Account
 *******************
 1. Administrator
-	-Super Admin, create a user for companies and freelancers
+	- Super Admin, create a user for companies and freelancers
 2. Company
 	- Publish any jobs for freelancer and view proposal upload
 3. Freelancer 
 	- Search jobs and upload proposal
 
-Administrator :
-- username : administrator 
-- password : password
+Administrator
+	- username : administrator 
+	- password : password
 
-Company :
-- username : company1
-- password : 12345678
+Company
+	- username : company1
+	- password : 12345678
 
-- username : company2
-- password : 12345678
+	- username : company2
+	- password : 12345678
 
-Freelancer :
-- username : user1
-- password : 12345678
-- Rank : B
+Freelancer
+	- username : user1
+	- password : 12345678
+	- Rank : B
 
 - username : user2
 - password : 12345678
