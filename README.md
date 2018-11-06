@@ -37,10 +37,10 @@ rank B freelancer can only submit 10times max and rank A can submit 20times max
 - Employer can view proposal from freelancer for their job post
 
 ## developed using
-Backend : PHP ( Codeigniter ) and Javascript ( AJAX )
-Frontend : Materialize CSS
-Login system : CodeIgniter Ion Auth by [@benedmunds](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
-Database : mySQL
+-Backend : PHP ( Codeigniter ) and Javascript ( AJAX )
+-Frontend : Materialize CSS
+-Login system : CodeIgniter Ion Auth by [@benedmunds](https://github.com/benedmunds/CodeIgniter-Ion-Auth)
+-Database : mySQL
 
 ## User Account
 1. Administrator
