@@ -55,18 +55,20 @@ Administrator
 	- username : administrator 
 	- password : password
 
-Company
+Company 1
 	- username : company1
 	- password : 12345678
-
+	
+Company 2
 	- username : company2
 	- password : 12345678
 
-Freelancer
+Freelancer 1
 	- username : user1
 	- password : 12345678
 	- Rank : B
-
+	
+Freelancer 2
 	- username : user2
 	- password : 12345678
 	- Rank : A
