@@ -2,6 +2,12 @@
 Simple Portal Jobs Website 
 ###################
 
+job portal website which connect company and expert freelancer/part-timer. It always keep
+track of freelancer performance, the more job freelancer completed the more benefit they
+gained. There are 2 ranks for freelancer with 2 different proposal space as monthly limit for
+submitting proposal. The ranks are: rank B with 20 pts and rank A with 40 pts, at the
+beginning of each month the proposal space is resetted.
+
 *******************
 Installation
 *******************
@@ -11,12 +17,6 @@ Installation
 4. Create database mx100
 5. Import database table from main folder ./assets/sql/mx100.sql to database mx100
 6. Run webiste from localhost/mx100
-
-job portal website which connect company and expert freelancer/part-timer. It always keep
-track of freelancer performance, the more job freelancer completed the more benefit they
-gained. There are 2 ranks for freelancer with 2 different proposal space as monthly limit for
-submitting proposal. The ranks are: rank B with 20 pts and rank A with 40 pts, at the
-beginning of each month the proposal space is resetted.
 
 *******************
 Objective
