@@ -33,7 +33,7 @@ class Ajax extends CI_Controller
 			}
 
         }else{
-            echo 'validation_errors()';
+            echo validation_errors();
         }
 
 	}
