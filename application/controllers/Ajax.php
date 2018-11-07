@@ -9,22 +9,33 @@ class Ajax extends CI_Controller
 {
 	public function post($table="", $jobs_id="")
 	{
+
+		$this->load->helper('form');
+    	$this->load->library('form_validation');
+
 		$data = $this->input->post(NULL, TRUE);
+
+		foreach ($data as $key => $value) {
+			$this->form_validation->set_rules($key, $key, 'required');
+		}
+
 		$data['users_id'] = $this->ion_auth->get_user_id();
 		$data['date'] = date('Y-m-d H:i:s');
 
-		if($table == "proposal"){
-			$this->insert_proposal($table, $jobs_id, $data);
-		}
-		if($table == "jobs"){
-			$this->insert_jobs($table, $data);
-		}
 
-		if($this->db->affected_rows() == 1){
-			echo "sukses";
-		}else{
-			echo "gagal";
-		}
+        if ($this->form_validation->run() != FALSE)
+        {
+			if($table == "proposal"){
+				$this->insert_proposal($table, $jobs_id, $data);
+			}
+			if($table == "jobs"){
+				$this->insert_jobs($table, $data);
+			}
+
+        }else{
+            echo 'validation_errors()';
+        }
+
 	}
 
 	public function get($table="")
@@ -63,13 +74,32 @@ class Ajax extends CI_Controller
 
 			$this->db->insert($table, $data);
 
+			if($this->db->affected_rows() > 0){
+				echo "sukses";
+			}else{
+				echo "gagal memasukkan data " . $table;
+			}
+
 		}else{
-			echo "gagal";
+			echo "gagal, anda tidak cukup poin";
 		}
 	}
 
 	private function insert_jobs($table="", $data=array())
 	{
-		$this->db->insert($table, $data);
+		$check = $this->db->where('judul', $data['judul'])->get('jobs')->num_rows();
+		if($check == 0){
+			$this->db->insert($table, $data);
+
+			if($this->db->affected_rows() > 0){
+				echo "sukses";
+			}else{
+				echo "gagal memasukkan data jobs ".$table;
+			}
+			
+		}else{
+			echo "gagal, judul yang anda masukkan sudah ada";
+		}
+		
 	}
 }

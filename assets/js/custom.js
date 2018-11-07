@@ -25,7 +25,7 @@ $(document).ready(function(){
 					$("body").load(window.location.href)
 					alert('success post')
 				}else{
-					alert('failed post');
+					alert(data.responseText);
 				}
 			}
 		});	
@@ -84,7 +84,9 @@ $(document).ready(function(){
 	$(".modal-form").on("click", function(){
 
 		var jobs_id = $(this).data('id')
+		var judul = $(this).data('judul')
 
+		$("#judul-proposal").empty().text(judul)
 		$("#upload-proposal").modal("open")
 
 		$(".submit_proposal").on('submit', function(e){
@@ -102,9 +104,8 @@ $(document).ready(function(){
 					if(data.responseText == "sukses"){
 						$("body").load(window.location.href)
 						alert('success post')
-						location.reload();
 					}else{
-						alert('failed post');
+						alert(data.responseText);
 					}
 				}
 			});	
